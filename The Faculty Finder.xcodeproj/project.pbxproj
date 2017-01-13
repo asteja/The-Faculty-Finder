@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		7E4E19A11C87561A002F1622 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4E19A01C87561A002F1622 /* AppDelegate.swift */; };
-		7E4E19A31C87561A002F1622 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4E19A21C87561A002F1622 /* ViewController.swift */; };
+		7E4E19A31C87561A002F1622 /* ProfessorInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4E19A21C87561A002F1622 /* ProfessorInfoViewController.swift */; };
 		7E4E19A61C87561A002F1622 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E19A41C87561A002F1622 /* Main.storyboard */; };
 		7E4E19A81C87561A002F1622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E19A71C87561A002F1622 /* Assets.xcassets */; };
 		7E4E19AB1C87561A002F1622 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E19A91C87561A002F1622 /* LaunchScreen.storyboard */; };
+		7E4E19B91C875919002F1622 /* DepartmentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4E19B81C875919002F1622 /* DepartmentsTableViewController.swift */; };
+		7E4E19BB1C875953002F1622 /* FacultyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4E19BA1C875953002F1622 /* FacultyTableViewController.swift */; };
+		7ECCF5101C88BC3500146AD1 /* Professor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECCF50F1C88BC3500146AD1 /* Professor.swift */; };
+		7ECCF5121C88BC3900146AD1 /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECCF5111C88BC3900146AD1 /* University.swift */; };
+		7ECCF5141C88BC3E00146AD1 /* Department.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECCF5131C88BC3E00146AD1 /* Department.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7E4E199D1C87561A002F1622 /* Alle_The Fine Faculty Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alle_The Fine Faculty Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E4E199D1C87561A002F1622 /* The Faculty Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Faculty Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4E19A01C87561A002F1622 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E4E19A21C87561A002F1622 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7E4E19A21C87561A002F1622 /* ProfessorInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorInfoViewController.swift; sourceTree = "<group>"; };
 		7E4E19A51C87561A002F1622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E4E19A71C87561A002F1622 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E4E19AA1C87561A002F1622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E4E19AC1C87561A002F1622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E4E19B81C875919002F1622 /* DepartmentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartmentsTableViewController.swift; sourceTree = "<group>"; };
+		7E4E19BA1C875953002F1622 /* FacultyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacultyTableViewController.swift; sourceTree = "<group>"; };
+		7ECCF50F1C88BC3500146AD1 /* Professor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Professor.swift; sourceTree = "<group>"; };
+		7ECCF5111C88BC3900146AD1 /* University.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
+		7ECCF5131C88BC3E00146AD1 /* Department.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Department.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +48,7 @@
 		7E4E19941C87561A002F1622 = {
 			isa = PBXGroup;
 			children = (
-				7E4E199F1C87561A002F1622 /* Alle_The Fine Faculty Finder */,
+				7E4E199F1C87561A002F1622 /* The Faculty Finder */,
 				7E4E199E1C87561A002F1622 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,30 +56,36 @@
 		7E4E199E1C87561A002F1622 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7E4E199D1C87561A002F1622 /* Alle_The Fine Faculty Finder.app */,
+				7E4E199D1C87561A002F1622 /* The Faculty Finder.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7E4E199F1C87561A002F1622 /* Alle_The Fine Faculty Finder */ = {
+		7E4E199F1C87561A002F1622 /* The Faculty Finder */ = {
 			isa = PBXGroup;
 			children = (
+				7ECCF5111C88BC3900146AD1 /* University.swift */,
+				7ECCF50F1C88BC3500146AD1 /* Professor.swift */,
 				7E4E19A01C87561A002F1622 /* AppDelegate.swift */,
-				7E4E19A21C87561A002F1622 /* ViewController.swift */,
+				7E4E19A21C87561A002F1622 /* ProfessorInfoViewController.swift */,
 				7E4E19A41C87561A002F1622 /* Main.storyboard */,
 				7E4E19A71C87561A002F1622 /* Assets.xcassets */,
+				7ECCF5131C88BC3E00146AD1 /* Department.swift */,
 				7E4E19A91C87561A002F1622 /* LaunchScreen.storyboard */,
 				7E4E19AC1C87561A002F1622 /* Info.plist */,
+				7E4E19B81C875919002F1622 /* DepartmentsTableViewController.swift */,
+				7E4E19BA1C875953002F1622 /* FacultyTableViewController.swift */,
 			);
+			name = "The Faculty Finder";
 			path = "Alle_The Fine Faculty Finder";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7E4E199C1C87561A002F1622 /* Alle_The Fine Faculty Finder */ = {
+		7E4E199C1C87561A002F1622 /* The Faculty Finder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7E4E19AF1C87561A002F1622 /* Build configuration list for PBXNativeTarget "Alle_The Fine Faculty Finder" */;
+			buildConfigurationList = 7E4E19AF1C87561A002F1622 /* Build configuration list for PBXNativeTarget "The Faculty Finder" */;
 			buildPhases = (
 				7E4E19991C87561A002F1622 /* Sources */,
 				7E4E199A1C87561A002F1622 /* Frameworks */,
@@ -79,9 +95,9 @@
 			);
 			dependencies = (
 			);
-			name = "Alle_The Fine Faculty Finder";
+			name = "The Faculty Finder";
 			productName = "Alle_The Fine Faculty Finder";
-			productReference = 7E4E199D1C87561A002F1622 /* Alle_The Fine Faculty Finder.app */;
+			productReference = 7E4E199D1C87561A002F1622 /* The Faculty Finder.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -96,10 +112,12 @@
 				TargetAttributes = {
 					7E4E199C1C87561A002F1622 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = NNMZKMNSPS;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
-			buildConfigurationList = 7E4E19981C87561A002F1622 /* Build configuration list for PBXProject "Alle_The Fine Faculty Finder" */;
+			buildConfigurationList = 7E4E19981C87561A002F1622 /* Build configuration list for PBXProject "The Faculty Finder" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -112,7 +130,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7E4E199C1C87561A002F1622 /* Alle_The Fine Faculty Finder */,
+				7E4E199C1C87561A002F1622 /* The Faculty Finder */,
 			);
 		};
 /* End PBXProject section */
@@ -135,8 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E4E19A31C87561A002F1622 /* ViewController.swift in Sources */,
+				7E4E19A31C87561A002F1622 /* ProfessorInfoViewController.swift in Sources */,
+				7E4E19BB1C875953002F1622 /* FacultyTableViewController.swift in Sources */,
+				7ECCF5101C88BC3500146AD1 /* Professor.swift in Sources */,
 				7E4E19A11C87561A002F1622 /* AppDelegate.swift in Sources */,
+				7E4E19B91C875919002F1622 /* DepartmentsTableViewController.swift in Sources */,
+				7ECCF5141C88BC3E00146AD1 /* Department.swift in Sources */,
+				7ECCF5121C88BC3900146AD1 /* University.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +272,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NNMZKMNSPS;
 				INFOPLIST_FILE = "Alle_The Fine Faculty Finder/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.nwmissouri.Alle-The-Fine-Faculty-Finder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -260,17 +285,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NNMZKMNSPS;
 				INFOPLIST_FILE = "Alle_The Fine Faculty Finder/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.nwmissouri.Alle-The-Fine-Faculty-Finder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7E4E19981C87561A002F1622 /* Build configuration list for PBXProject "Alle_The Fine Faculty Finder" */ = {
+		7E4E19981C87561A002F1622 /* Build configuration list for PBXProject "The Faculty Finder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7E4E19AD1C87561A002F1622 /* Debug */,
@@ -279,13 +306,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7E4E19AF1C87561A002F1622 /* Build configuration list for PBXNativeTarget "Alle_The Fine Faculty Finder" */ = {
+		7E4E19AF1C87561A002F1622 /* Build configuration list for PBXNativeTarget "The Faculty Finder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7E4E19B01C87561A002F1622 /* Debug */,
 				7E4E19B11C87561A002F1622 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
